@@ -1,5 +1,6 @@
     <?php
     session_start();
+    $_SESSION['etapa'] = 1;
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'] ?? '';
